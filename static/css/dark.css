@@ -51,15 +51,16 @@ body {
     background-size: cover;
     background-repeat: repeat-y;
     background-position: center;
-    background-image: url("/static/images/dark.webp");
-    background-color: #080d10
+    /* using particles.js for now? */
+    /* background-image: url("/static/images/dark.webp"); */
+    background-color: #010101;
 }
 
 #inner {
-
     padding: 50px 40px;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(14, 14, 14, .7);
+    /* background-color: rgba(255, 255, 255, .1); */
     margin: -3.5% auto;
     margin-top: -6%;
     width: 50%;
@@ -108,7 +109,7 @@ h2 {
 }
 
 h1:hover {
-    filter: drop-shadow(0px 0px 15px #00fff3);
+    filter: drop-shadow(0px 0px 15px #00bfff);
 }
 
 p {
@@ -617,4 +618,10 @@ input:checked+.slider:before {
         bottom: 0;
         opacity: 0
     }
+}
+
+/* particle.js */
+.particles-js-canvas-el {
+    position: absolute;
+    z-index: -500;
 }

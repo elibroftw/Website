@@ -12,6 +12,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#111111" />{% block style %}{% endblock -%}
 <body>
+{% if request.cookies.get('theme', 'false') == 'true' -%}
+<div id="particles-js"></div>
+{%- endif %}
 <nav id="mobile-nav" onclick="mobileNavigation()" class="noselect">
     <span id="mobile-nav-label">menu</span>
     <ul id="mobile-nav-panel">
@@ -109,6 +112,10 @@
 
     if (getCookie('theme') === 'true') document.getElementById('theme-toggle').checked = true;
 </script>
+{% if request.cookies.get('theme', 'false') == 'true' -%}
+<script src="/static/js/particles.min.js"></script>
+<script>particlesJS.load('particles-js', '/static/particles.json');</script>
+{%- endif %}
 {%- block script %}{% endblock -%}
 </body>
 </html>
