@@ -42,9 +42,11 @@ shutil.rmtree(metadata_setter_dir, ignore_errors=True)
 with suppress(FileExistsError): os.mkdir(metadata_setter_dir)
 REACT_BUILD_FOLDER = 'react_app/build'
 DEV_ENV = bool(os.getenv('DEV', False))
-quotes = ['First comes organization, then everything falls in place', "People don't know what they want until you show it to them",
-          'Expect the worst to be your best', 'To follow or to think?', 'The path to virtue is often the path to happiness',
-          '"It\'s co—uncommon sense"', '"Are you not entertained?"', '"Decent people don’t want to harm those who disagree with them"']
+quotes = ['First comes organization, then everything falls in place',
+          'Expect the worst to be at your best',
+          'The path to virtue is often the path to happiness',
+          "Common sense ain't so common", 'Are you not entertained?',
+          "100 people surveyed. Number one answer's on the board. Who's the world's greatest spy?"]
 
 try:
     url = 'https://cssminifier.com/raw'
