@@ -132,6 +132,11 @@ p {
     margin: 0.5em 0;
 }
 
+.leftAlign {
+    text-align: left;
+    margin-left: 5%;
+}
+
 .link {
     margin-top: 10px;
     text-decoration: none;
